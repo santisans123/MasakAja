@@ -13,19 +13,19 @@ class ListMinuman {
 List<ListMinuman> menuMinuman = [
   ListMinuman(
     id: 1,
-    image: "",
+    image: "assets/makanan/kukus.jpg",
     title: "",
   ),
   ListMinuman(
     id: 2,
     image:
-      "",
+      "assets/makanan/kukus.jpg",
     title: "",
   ),
   ListMinuman(
     id: 3,
     image:
-      "",
+      "assets/makanan/kukus.jpg",
     title: "",
   ),
 ];

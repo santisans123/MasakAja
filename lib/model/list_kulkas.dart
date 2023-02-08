@@ -13,19 +13,19 @@ class ListKulkas {
 List<ListKulkas> menuKulkas = [
   ListKulkas(
     id: 1,
-    image: "",
+    image: "assets/makanan/kukus.jpg",
     title: "",
   ),
   ListKulkas(
     id: 2,
     image:
-    "",
+    "assets/makanan/kukus.jpg",
     title: "",
   ),
   ListKulkas(
     id: 3,
     image:
-    "",
+    "assets/makanan/kukus.jpg",
     title: "",
 
   ),

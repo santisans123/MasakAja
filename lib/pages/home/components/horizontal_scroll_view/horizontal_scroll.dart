@@ -3,14 +3,14 @@ import 'package:masakaja/import/import_main.dart';
 class HorizontalScroll extends StatelessWidget {
   HorizontalScroll({
     Key? key,
-    required this.minuman,
-    required this.bahanKulkas,
-    required this.statusKulkas
+    required this.statusKulkas,
+    this.minuman,
+    this.bahanKulkas
   }) : super(key: key);
 
-  final ListMinuman minuman;
-  final ListKulkas bahanKulkas;
   final bool statusKulkas;
+  final ListMinuman? minuman;
+  final ListKulkas? bahanKulkas;
 
   @override
   Widget build(BuildContext context) {
@@ -25,10 +25,10 @@ class HorizontalScroll extends StatelessWidget {
             children: [
               isKulkas == false ?
               ItemRounded(
-                image: minuman.image, isKulkas: false,
+                image: minuman!.image, isKulkas: false,
               ) :
               ItemRounded(
-                image: bahanKulkas.image, isKulkas: true,
+                image: bahanKulkas!.image, isKulkas: true,
               ),
             ],
           ),
