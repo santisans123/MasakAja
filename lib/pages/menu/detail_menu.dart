@@ -1,5 +1,5 @@
 import 'dart:io';
-
+import 'package:share_plus/share_plus.dart';
 import 'package:masakaja/import/import_main.dart';
 
 class DetailMenu extends StatefulWidget {
@@ -42,7 +42,7 @@ class _DetailMenuState extends State<DetailMenu> {
         await Share.shareFiles([path],
             text:
             'Dapatkan ${widget.name} Rp${widget.price} di aplikasi kami di link:');
-        // Share.shareXFiles([XFile('${widget.imgPath}')], text: 'Dapatkan ${widget.name} Rp${widget.price} di https://');
+        Share.shareXFiles([XFile('${widget.imgPath}')], text: 'Dapatkan ${widget.name} Rp${widget.price} di https://');
       } else {
         await Share.share(
           'Dapatkan ${widget.name} Rp${widget.price} di aplikasi kami di link:',

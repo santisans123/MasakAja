@@ -1,5 +1,5 @@
 import 'package:masakaja/import/import_main.dart';
-import 'package:masakaja/pages/menu/category_makanan.dart';
+import 'package:masakaja/pages/home/home_page.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -12,7 +12,7 @@ class _SplashScreenState extends State<SplashScreen> {
     var duration = const Duration(seconds: 5);
     return Timer(duration, () {
       Navigator.of(context).pushReplacement(
-          MaterialPageRoute(builder: (context) => CategoryMakanan()));
+          MaterialPageRoute(builder: (context) => HomePage()));
     });
   }
   @override

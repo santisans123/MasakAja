@@ -33,8 +33,9 @@ dependencies:
     sdk: flutter
   get: ^4.6.5
   get_storage: ^2.0.3
-  share_plus: ^6.3.0
   like_button: ^2.0.5
+  share_plus: ^6.3.0
+  carousel_slider: ^4.2.1
 
 
   # The following adds the Cupertino Icons font to your application.
