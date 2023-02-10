@@ -4,33 +4,36 @@ class HorizontalScroll extends StatelessWidget {
   HorizontalScroll({
     Key? key,
     required this.statusKulkas,
-    this.minuman,
-    this.bahanKulkas
   }) : super(key: key);
 
   final bool statusKulkas;
-  final ListMinuman? minuman;
-  final ListKulkas? bahanKulkas;
 
   @override
   Widget build(BuildContext context) {
     final size_width = MediaQuery.of(context).size.width;
     bool isKulkas = statusKulkas;
+    List<Widget> _listMinuman = List.generate(menuMinuman.length, (i) =>
+        ItemRounded(
+          image: menuMinuman[i].image,
+          title: menuMinuman[i].title,
+          isKulkas: false,
+        ));
+    List<Widget> _listKulkas = List.generate(menuKulkas.length, (i) =>
+        ItemRounded(
+          image: menuKulkas[i].image,
+          title: menuKulkas[i].title,
+          isKulkas: true,
+        ));
 
     return Container(
         margin: EdgeInsets.symmetric(horizontal: size_width * 0.01),
         child: SingleChildScrollView(
           scrollDirection: Axis.horizontal,
           child: Row(
-            children: [
+            children :
               isKulkas == false ?
-              ItemRounded(
-                image: minuman!.image, isKulkas: false,
-              ) :
-              ItemRounded(
-                image: bahanKulkas!.image, isKulkas: true,
-              ),
-            ],
+              _listMinuman :
+              _listKulkas
           ),
       )
     );

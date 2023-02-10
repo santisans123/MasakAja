@@ -1,4 +1,5 @@
 import 'package:masakaja/import/import_main.dart';
+import 'package:masakaja/pages/home/navbar.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -10,7 +11,6 @@ class HomePage extends StatefulWidget {
 class _TopupGameState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    final size_width = MediaQuery.of(context).size.width;
 
     return MaterialApp(
       home: DefaultTabController(
@@ -18,28 +18,23 @@ class _TopupGameState extends State<HomePage> {
         child: Scaffold(
             body: Container(
             color: kPrimaryWhiteColor,
-            padding: EdgeInsets.symmetric(
-              horizontal: size_width * 0.02,
-            ),
             child: ListView(
               children: [
                 Carousel(),
-                Text("Mau Menu Apa Hari Ini?",
-                    style: TextStyle(
-                        fontSize: size_width * 0.045,
-                        fontWeight: FontWeight.bold,
-                        letterSpacing: 0.5)),
-                Text("Pilih Metode Memasak Yang Disukai"),
-                SizedBox(height: size_width * 0.015),
-                MetodeMasak(),
-                SeeMore(title: "Minuman"),
-                HorizontalScroll(minuman: menuMinuman[0], statusKulkas: false),
-                SeeMore(title: "Manfaatkan Kulkasmu"),
-                HorizontalScroll(bahanKulkas: menuKulkas[0],statusKulkas: true),
+                CardMetodeMasak(),
+                BoxSinglescroll(
+                    title: "Minuman",
+                    optionKulkas: false
+                ),
+                BoxSinglescroll(
+                    title: "Kulkasmu",
+                    optionKulkas: true
+                ),
               ],
             ),
           ),
-        )),
+        )
+      ),
     );
   }
 }

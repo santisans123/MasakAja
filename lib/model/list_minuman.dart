@@ -13,19 +13,36 @@ class ListMinuman {
 List<ListMinuman> menuMinuman = [
   ListMinuman(
     id: 1,
-    image: "assets/makanan/kukus.jpg",
-    title: "",
+    image: "assets/minuman/es_oyen.jpg",
+    title: "Es Oyen",
   ),
   ListMinuman(
     id: 2,
     image:
-      "assets/makanan/kukus.jpg",
-    title: "",
+      "assets/minuman/es_campur.jpg",
+    title: "Es Campur",
   ),
   ListMinuman(
     id: 3,
     image:
-      "assets/makanan/kukus.jpg",
-    title: "",
+      "assets/minuman/es_doger.jpg",
+    title: "Es Doger",
+  ),
+  ListMinuman(
+    id: 4,
+    image: "assets/minuman/es_oyen.jpg",
+    title: "Es Oyen",
+  ),
+  ListMinuman(
+    id: 5,
+    image:
+    "assets/minuman/es_campur.jpg",
+    title: "Es Campur",
+  ),
+  ListMinuman(
+    id: 6,
+    image:
+    "assets/minuman/es_doger.jpg",
+    title: "Es Doger",
   ),
 ];

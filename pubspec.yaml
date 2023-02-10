@@ -36,6 +36,7 @@ dependencies:
   like_button: ^2.0.5
   share_plus: ^6.3.0
   carousel_slider: ^4.2.1
+  persistent_bottom_nav_bar: ^5.0.2
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -108,3 +109,5 @@ flutter:
   assets:
     - assets/logo/
     - assets/makanan/
+    - assets/minuman/
+    - assets/bahan/

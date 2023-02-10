@@ -24,8 +24,8 @@ class SeeMore extends StatelessWidget {
           Text(
             title,
             style: TextStyle(
-              fontSize: size_width * 0.045,
-              fontWeight: FontWeight.bold,
+              fontSize: size_width * 0.05,
+              fontWeight: FontWeight.w500,
             ),
           ),
           Text(

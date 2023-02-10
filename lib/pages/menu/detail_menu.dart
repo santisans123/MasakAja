@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'package:masakaja/pages/menu/components/buttombar_detail_menu.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:masakaja/import/import_main.dart';
 
@@ -149,18 +150,6 @@ class _DetailMenuState extends State<DetailMenu> {
                                   horizontal: size.width * 0.015),
                               child: LikeButton(),
                             ),
-                            // Container(
-                            //     margin: EdgeInsets.symmetric(
-                            //         horizontal: size.width * 0.015),
-                            //     child: IconButton(
-                            //         onPressed: () {
-                            //
-                            //         },
-                            //         icon: Icon(
-                            //           Icons.whatsapp,
-                            //           size: size.width * 0.06,
-                            //           color: kPrimaryJinggaColor,
-                            //         ))),
                             Container(
                                 margin: EdgeInsets.symmetric(
                                     horizontal: size.width * 0.015),
@@ -188,7 +177,7 @@ class _DetailMenuState extends State<DetailMenu> {
                     ),
                     child: Row(
                       children: [
-                        Text("Spesifikasi",
+                        Text("List Budget",
                             style: TextStyle(
                               fontSize: size.width * 0.035,
                             )),
@@ -211,7 +200,7 @@ class _DetailMenuState extends State<DetailMenu> {
                     ),
                     child: Row(
                       children: [
-                        Text("Prosedur Pembuatan",
+                        Text("Bahan - Bahan",
                             style: TextStyle(
                               fontSize: size.width * 0.045,
                             )),
@@ -264,7 +253,14 @@ class _DetailMenuState extends State<DetailMenu> {
                                     )),
                               ])))
                 ],
-              )),
-        ));
+              )
+          ),
+          bottomNavigationBar: BottombarDetailMenu(
+            link: () {
+
+            },
+          ),
+        ),
+    );
   }
 }
